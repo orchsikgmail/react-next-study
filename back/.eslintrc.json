@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": [
+        
+    ],
+    "rules": {
+        "jsx-a11y/label-has-associated-control" : 0,
+        "jsx-a11y/anchor-is-valid" : 0,
+        "camelcase": 0,
+        "no-unused-vars": 0,
+        "no-console": 0,
+        "no-alert": 0,
+        "no-empty": 1,
+        "no-underscore-dangle": 0
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "jest": true,
+        "commonjs": true
+    }
+    // "parserOptions": {
+    //     "ecmaFeatures": {
+    //         "jsx": true
+    //     },
+    //     "ecmaVersion": 2018,
+    //     "sourceType": "module"
+    // }
+}

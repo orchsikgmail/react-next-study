@@ -1,0 +1,71 @@
+{
+  "jwtSecret": "jwtSecret",
+  "jwtSecretMgr": "jwtSecretMgr",
+  "cryToKey": "cryToKey",
+  "port": 8080,
+  "bodyLimit": "10mb",
+  "corsHeaders": ["Link"],
+  "development": {
+    "server": {
+      "httpPort": 3131,
+      "httpsPort": 543,
+      "isHttpSupport": true,
+      "isHttpsSupport": false,
+      "isOnlyDomainSupport": false,
+      "domainName": "domainName.com"
+    },
+    "certificate": {
+      "key": "TEST.key",
+      "cert": "TEST.crt",
+      "ca": [],
+      "passphrase": ""
+    },
+    "dbConn": {
+      "user": "sa",
+      "password": null,
+      "database": "",
+      "server": "127.0.0.1",
+      "port": 1433,
+      "connectionTimeout": 60000,
+      "requestTimeout": 60000,
+      "pool": {
+        "max": 10,
+        "min": 0,
+        "softIdleTimeoutMillis": 120000,
+        "idleTimeoutMillis": 180000
+      }
+    }
+  },
+
+  "production": {
+    "server": {
+      "httpPort": 80,
+      "httpsPort": 543,
+      "isHttpSupport": true,
+      "isHttpsSupport": false,
+      "isOnlyDomainSupport": false,
+      "domainName": "domainName.com"
+    },
+    "certificate": {
+      "key": "TEST.key",
+      "cert": "TEST.crt",
+      "ca": [],
+      "passphrase": ""
+    },
+    "dbConn": {
+      "user": "sa",
+      "password": null,
+      "database": "",
+      "server": "127.0.0.1",
+      "port": "1433",
+      "connectionTimeout": 60000,
+      "requestTimeout": 60000,
+      "pool": {
+        "max": 30,
+        "min": 0,
+        "softIdleTimeoutMillis": 120000,
+        "idleTimeoutMillis": 180000
+      }
+    }
+  }
+}
